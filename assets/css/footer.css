@@ -1,0 +1,136 @@
+.footer-container {
+    background-color: var(--azul-fundo);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 1rem;
+    align-items: center;
+}
+
+.footer-lista {
+    padding: 1rem 0;
+}
+
+.footer-lista li {
+    padding-bottom: 1rem;
+    text-align: center;
+
+}
+
+.footer-lista img {
+    padding-bottom: 1rem;
+}
+
+.footer-lista a {
+    color: var(--cinza-fonte);
+}
+
+.fale-conosco {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.fale-conosco textarea {
+    margin: 0.5rem 0;
+}
+
+.fale-conosco input {
+    margin: 0 0 0.5rem;
+}
+
+.enviar {
+    margin: 1rem 0;
+}
+
+.fale-conosco legend {
+    padding-bottom: 0.5rem;
+}
+
+.creditos {
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.referencia {
+    font-size: 0.8rem;
+    font-style: italic;
+    padding-top: 1rem;
+}
+
+.input-label {
+    font-size: 0.75rem;
+    color: var(--cinza-secundario);
+    background-color: var(--branco);
+    font-weight: var(--fonte-peso-botao-desktop);
+    padding: 0.5rem;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 2rem;
+    }
+
+    .footer-lista { 
+        margin: 0 auto;
+    }
+
+    .footer-lista li {
+        text-align: left;
+        padding-bottom: 2rem;
+    }
+
+    .fale-conosco {
+        width: 60%;
+        margin: 0 auto;
+
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .footer-container {
+        justify-content: space-between;
+        padding: 4rem 4rem;
+    }
+
+    .footer-lista {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .footer-lista li {
+        padding: 0 2.5rem 1.5rem;
+    }
+
+    .fale-conosco {
+        width: 50%;
+    }
+
+    .creditos {
+        padding: 2rem 2rem;
+    }
+
+    .input-label {
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+    .footer-lista li {
+        padding: 0 3.5rem 1.5rem;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    .footer-container {
+        padding: 4rem 7rem;
+    }
+}
