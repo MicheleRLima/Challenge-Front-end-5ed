@@ -55,7 +55,7 @@
     }
 
     .nav {
-        padding: 2rem 5rem;
+        padding: 2.2rem 7rem;
         max-width: 80rem;
         margin: 0 auto;
     }
@@ -64,6 +64,7 @@
 
 @media screen and (min-width: 2560px) {
     .nav {
+        padding: 2.2rem 9rem;
         max-width: 130rem;
         margin: 0 auto;
     }
