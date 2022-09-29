@@ -21,9 +21,8 @@
 }
 
 .login a {
-    min-width: 6.8rem;
+    width: 6.8rem;
     text-align: center;
-    max-width: 17rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -39,21 +38,19 @@
     }
 
     .login input {
-        width: 22rem;
-        max-width: 26rem;
+        max-width: 22rem;
+        padding: 1rem;
     }
 
     .login a {
-        text-align: center;
         width: 22rem;
-        max-width: 26rem;
     }
 
 }
 
 @media screen and (min-width: 1440px) {
     .login {
-        padding: 5.7rem;
+        padding: 6rem;
     }
 
     .login h1 {
@@ -61,13 +58,11 @@
     }
     
     .login input {
-        width: 26rem;
-        max-width: 50rem;
+        max-width: 26rem;
     }
 
     .login a {
         width: 26rem;
-        max-width: 50rem;
         font-size: 1.125rem;
     }
 }
@@ -78,13 +73,13 @@
     }
     
     .login input {
-        width: 50rem;
-        max-width: 120rem;
+        max-width: 50rem;
+        padding: 1.5rem;
     }
 
     .login a {
         width: 50rem;
-        max-width: 120rem;
         font-size: 1.125rem;
+        padding: 1.5rem;
     }
 }

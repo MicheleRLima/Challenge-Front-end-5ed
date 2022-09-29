@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adcionar Produto | Alura Geek</title>
+    <link rel="stylesheet" href="reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/add-produto-header.css">
+    <link rel="stylesheet" href="assets/css/add-produto.css">
+   
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <div class="nav-desktop">
+                <img src="assets/img/Logo.svg" alt="Logotipo Alura Geek" class="logo">
+                <input class="busca" type="search" name="busca" placeholder="O que deseja encontrar?">
+            </div>
+            <a href="#" class="botao-secundario">Menu administrador</a>
+            <img class="icone" src="assets/icone/Iconepreto.svg" alt="Ícone de pesquisa" class="icone">
+        </div>
+    </header>
+
+    <main>
+        <fieldset class="add-produtos">
+            <div class="cadastro-produtos">
+                <h1>Adcionar novo produto</h1>
+                <label for="cadastro" class="input-label">URL da imagem</label>
+                <input type="text" class="add-produtos__input" id="cadastro">
+                <label for="cadastro" class="input-label">Categoria</label>
+                <input type="text" class="add-produtos__input" id="cadastro">
+                <label for="cadastro" class="input-label">Nome do produto</label>
+                <input type="text" class="add-produtos__input" id="cadastro">
+                <label for="cadastro" class="input-label">Preço do produto</label>
+                <input type="number" step="0.01" min="0.01" class="add-produtos__input" id="cadastro">
+                <label for="descricao" class="input-label">Descrição do produto</label>
+                <textarea name="descricao" id="descricao" cols="20" rows="10"></textarea>
+                <a href="#" class="botao">Adicionar produto</a>
+            </div>
+        </fieldset>
+        
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-lista">
+                <img src="assets/img/Logorodape.svg" alt="Logotipo Alura Geek">
+                <ul>
+                    <li><a href="#">Quem somos nós</a></li>
+                    <li><a href="#">Política de privacidade</a></li>
+                    <li><a href="#">Programa fidelidade</a></li>
+                    <li><a href="#">Nossas lojas</a></li>
+                    <li><a href="#">Quero ser franqueado</a></li>
+                    <li><a href="#">Anuncie aqui</a></li>
+                </ul>
+            </div>
+            <fieldset class="fale-conosco">
+                <legend>Fale Conosco</legend>
+                <label class="input-label" for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" data-type="nome" required>
+                <textarea name="mensagem" id="mensagem" cols="20" rows="10" minlength="5" maxlength="200" placeholder="Escreva sua mensagem"></textarea>
+                <div class="enviar">
+                    <a href="#" class="botao">Enviar mensagem</a>
+                </div>
+            </fieldset>
+        </div>
+        <div class="creditos">
+            <p>Desenvolvido por Michele Lima<br>2022</p>
+            <p class="referencia">Alura challenge 5ed</p>
+        </div>
+    </footer>
+
+</body>
+</html>

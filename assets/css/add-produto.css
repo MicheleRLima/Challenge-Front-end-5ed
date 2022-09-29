@@ -1,0 +1,38 @@
+.add-produtos {
+    background-color: var(--cinza-fundo);
+    padding: 5vw;
+}
+
+.cadastro-produtos {
+    display: flex;
+    flex-direction: column;
+    max-width: 44rem;
+    margin: 0 auto;
+}
+
+.cadastro-produtos h1 {
+    font-size: 1.375rem;
+    font-weight: var(--fonte-peso-destaque);
+    padding-bottom: 1rem;
+}
+
+.add-produtos__input {
+    margin-bottom: 1rem;
+}
+
+.cadastro-produtos textarea {
+    height: 5rem;   
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+    
+    .cadastro-produtos {
+        max-width: 46rem;
+    }
+
+    .cadastro-produtos h1 {
+        font-size: 2rem;
+    }
+}
+

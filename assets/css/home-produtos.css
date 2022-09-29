@@ -54,7 +54,7 @@
 }
 
 .produtos {
-    max-width: 30rem;
+    max-width: 38rem;
     margin: 0 auto;
 }
 
@@ -65,7 +65,6 @@
 
     .produtos {
         max-width: 56rem;
-        margin: 0 auto;
     }
 
     .produtos-secao { 
@@ -112,7 +111,6 @@
 @media screen and (min-width: 2560px) {
     .produtos {
         max-width: 130rem;
-        margin: 0 auto;
     }
 }
 

@@ -4,6 +4,8 @@
     padding: 1rem;
     font-weight: var(--fonte-peso-botao-mobile);
     font-size: 0.875rem;
+    text-decoration: none;
+    text-align: center;
 }
 
 .botao-secundario {
@@ -13,7 +15,8 @@
     font-weight: var(--fonte-peso-botao-mobile);
     padding: 1rem;
     font-size: 0.875rem;
-
+    text-decoration: none;
+    text-align: center;
 }
 
 .botao:hover {

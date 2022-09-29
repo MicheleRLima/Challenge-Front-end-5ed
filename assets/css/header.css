@@ -2,8 +2,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 0.875rem;
-    color: var(--azul-principal);
     padding: 1rem;    
 }
 

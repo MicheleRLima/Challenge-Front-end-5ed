@@ -44,8 +44,9 @@ input:focus, textarea:focus, select:focus {
 @media screen and (min-width: 1024px) {
     input, textarea {
         font-size: 1rem;
-        padding: 1rem;
     }
 }
+
+
 
 
