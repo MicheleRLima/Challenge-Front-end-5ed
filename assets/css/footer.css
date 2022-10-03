@@ -120,6 +120,10 @@
         font-size: 1rem;
     }
 
+    .botao {
+        width: 10rem;
+    }
+
 }
 
 @media screen and (min-width: 1440px) {
