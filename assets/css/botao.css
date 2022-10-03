@@ -1,4 +1,5 @@
 .botao {
+    font-family: var(--fonte);
     background-color: var(--azul-principal);
     color: var(--branco);
     padding: 1rem;
@@ -6,9 +7,11 @@
     font-size: 0.875rem;
     text-decoration: none;
     text-align: center;
+    border: none;
 }
 
 .botao-secundario {
+    font-family: var(--fonte);
     background-color: transparent;
     border: solid 1px var(--azul-principal);
     color: var(--azul-principal);
@@ -17,6 +20,7 @@
     font-size: 0.875rem;
     text-decoration: none;
     text-align: center;
+    border: none;
 }
 
 .botao:hover {

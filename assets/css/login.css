@@ -25,6 +25,7 @@
     text-align: center;
 }
 
+
 @media screen and (min-width: 768px) {
     .login {
         padding: 4rem 2.6rem 4rem;
@@ -46,6 +47,7 @@
         width: 22rem;
     }
 
+ 
 }
 
 @media screen and (min-width: 1440px) {
@@ -82,4 +84,5 @@
         font-size: 1.125rem;
         padding: 1.5rem;
     }
+   
 }
