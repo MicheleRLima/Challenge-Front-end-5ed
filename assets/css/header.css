@@ -58,6 +58,11 @@
         margin: 0 auto;
     }
 
+    .nav img {
+        width: 176px;
+        height: auto;
+    }
+
 }
 
 @media screen and (min-width: 2560px) {
@@ -67,8 +72,5 @@
         margin: 0 auto;
     }
 
-    .nav img {
-        width: 176px;
-        height: auto;
-    }
+    
 }
