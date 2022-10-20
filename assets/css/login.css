@@ -20,7 +20,19 @@
     max-width: 20rem
 }
 
-.login a {
+.login input.error {
+    color: var(--error);
+    border: 1px solid var(--error);
+}
+
+.erro-mensagem {
+    color: var(--error);
+    font-size: 12px;
+    font-family: var(--fonte);
+    margin-bottom: 1rem;
+}
+
+.login button {
     width: 6.8rem;
     text-align: center;
 }
@@ -43,8 +55,8 @@
         padding: 1rem;
     }
 
-    .login a {
-        width: 22rem;
+    .login button {
+        width: 24rem;
     }
 
  
@@ -63,9 +75,9 @@
         max-width: 26rem;
     }
 
-    .login a {
-        width: 26rem;
+    .login button {
         font-size: 1.125rem;
+        width: 28rem;
     }
 }
 
@@ -79,9 +91,8 @@
         padding: 1.5rem;
     }
 
-    .login a {
-        width: 50rem;
-        font-size: 1.125rem;
+    .login button {
+        width: 53rem;
         padding: 1.5rem;
     }
    
