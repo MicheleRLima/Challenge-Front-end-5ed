@@ -25,6 +25,11 @@
     margin-bottom: 1rem;
 }
 
+.add-produtos input.error {
+    color: var(--error);
+    border: 1px solid var(--error);
+}
+
 @media screen and (min-width: 1024px) {
     
     .cadastro-produtos {

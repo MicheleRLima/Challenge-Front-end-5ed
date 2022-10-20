@@ -64,6 +64,10 @@
     padding: 0.5rem;
 }
 
+.fale-conosco input.error, textarea.error {
+    color: var(--error);
+    border: 1px solid var(--error);
+}
 
 @media screen and (min-width: 768px) {
 
@@ -116,8 +120,6 @@
     .input-label {
         font-size: 1rem;
     }
-
-
 }
 
 @media screen and (min-width: 1440px) {

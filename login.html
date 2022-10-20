@@ -25,11 +25,15 @@
         </div>
     </header>
     
-    <fieldset class="login">
-        <h1>Iniciar Sessão</h1>
-        <input type="email" name="email" id="email" placeholder="Escreva seu email" required>
-        <input type="password" name="senha" id="senha" placeholder="Escreva sua senha" required>
-        <a class="botao" href="todos-os-produtos.html">Entrar</a>
+    <fieldset>
+        <form action="add-produto.html" class="login">
+            <h1>Iniciar Sessão</h1>
+            <input type="email" name="email" id="email" placeholder="Escreva seu email" data-type="email" required>
+            <span id="mensagem-email"></span>
+            <input type="password" name="senha" id="senha" placeholder="Escreva sua senha" data-type="senha" maxlength="10" required>
+            <span id="mensagem-senha"></span>
+            <button type="button" class="botao">Entrar</button>
+        </form>
     </fieldset>
 
     <footer>
@@ -48,10 +52,10 @@
             <fieldset class="fale-conosco">
                 <legend>Fale Conosco</legend>
                 <label class="input-label" for="nome">Nome</label>
-                <input type="text" name="nome" id="nome" data-type="nome" required>
-                <textarea name="mensagem" id="mensagem" cols="20" rows="10" minlength="5" maxlength="200" placeholder="Escreva sua mensagem"></textarea>
+                <input type="text" name="nome" id="nome" data-type="nome" maxlength="40" required>
+                <textarea name="mensagem" id="mensagem" cols="20" rows="10" maxlength="120" placeholder="Escreva sua mensagem" required></textarea>
                 <div class="enviar">
-                    <button class="botao">Enviar mensagem</button>
+                    <button type="button" class="botao">Enviar mensagem</button>
                 </div>
             </fieldset>
         </div>
@@ -60,6 +64,8 @@
             <p class="referencia">Alura challenge 5ed</p>
         </div>
     </footer>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/login.js"></script>
 
 </body>
 </html>
