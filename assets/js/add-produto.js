@@ -1,57 +1,80 @@
 const inputsProduto = document.querySelectorAll('#cadastro')
 
-
 inputsProduto.forEach(input => {
     input.addEventListener('blur', (evento) => {
-        validaAddProduto(evento.target); 
-        
+        validaAddProduto(evento.target);
     })
 })
 
 function validaAddProduto (evento) {
-    const inputInformado = evento.value
+    const inputInformado = evento.value;
 
     if(inputInformado != "") {
         evento.classList.remove("error")
 
         if (evento.dataset.tipo === 'preco') {
-
-            mascaraPreco(evento)
+            
+            mascaraPreco(evento);
         }
-
     }else {
+        
         evento.classList.add("error")
     }
 }
 
+
 function mascaraPreco (evento) {
-    const valorRecebido = evento.value
 
-    console.log("valor recebido", valorRecebido)
+    $(document).ready(function(){
+        
+        $('.money').mask('000.000.000.000.000,00', {reverse: true});
 
-    const valorAjustado = valorRecebido.replace(/[^0-9]/g,'')
+        const valorRecebido = evento.value
+        const valorSemMoeda = valorRecebido.replace("R$ ", "")
+        const valorSemMilhar = valorSemMoeda.replace(/\./g, "")
+        const valorAjustado = valorSemMilhar.replace(",", ".")
 
-    console.log("valor ajustado ", valorAjustado)
+        const preco = new Intl.NumberFormat('pt-br', { style: 'currency', currency: 'BRL' }).format(valorAjustado)
+        
+       evento.value = preco;
+       
+     });
+}
 
-    const preco = new Intl.NumberFormat('pt-br', { style: 'currency', currency: 'BRL' }).format(valorAjustado)
-    console.log("preco ", preco)
+const btnAddProduto = document.querySelector(".cadastro-produtos button")
 
-    evento.value = preco
+btnAddProduto.addEventListener('click', validaBtnAdicionaProduto)
+const form = document.querySelector('form')
 
+function validaBtnAdicionaProduto() {
+
+    if (verificaConteudo()) {
+        form.submit();
+    }
+    
+}
+
+function verificaConteudo() {
+
+    const listaInputs = [];
+    
+    for(i = 0; i < inputsProduto.length; i++) {
+    
+        if(inputsProduto[i].value === "") {
+            alert ("Todos os campos devem estar preenchidos");
+            return false;
+        }
+    
+        listaInputs.push(inputsProduto[i].value);
+        console.log(listaInputs)
+    }
+    
+    // if (listaInputs.length === inputsProduto.length) {
+        //     return true
+        // }
+        
+        return true;
 }
 
 
-// const btnAddProduto = document.querySelector(".cadastro-produtos button")
-
-// btnAddProduto.addEventListener('click', validaBtnAdicionaProduto)
-
-
-// function validaBtnAdicionaProduto () {
-//     const contaErros = document.querySelectorAll('.error')
-    
-//     if(contaErros < 1) {
-//         alert ("Todos os campos devem estar preenchidos")
-//     }
-    
-// }
 

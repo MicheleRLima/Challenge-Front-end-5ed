@@ -31,16 +31,16 @@
                 <div class="cadastro-produtos">
                     <h1>Adcionar novo produto</h1>
                     <label for="cadastro" class="input-label">URL da imagem</label>
-                    <input type="text" class="add-produtos__input" id="cadastro" required>
+                    <input type="text" class="add-produtos__input" id="cadastro">
                     <label for="cadastro" class="input-label">Categoria</label>
-                    <input type="text" class="add-produtos__input" id="cadastro" required>
+                    <input type="text" class="add-produtos__input" id="cadastro">
                     <label for="cadastro" class="input-label">Nome do produto</label>
-                    <input type="text" class="add-produtos__input" id="cadastro" required maxlength="20">
+                    <input type="text" class="add-produtos__input" id="cadastro" maxlength="20">
                     <label for="cadastro" class="input-label">Preço do produto</label>
-                    <input type="text" step="0.01" min="0.01" class="add-produtos__input" id="cadastro" name="preco" data-tipo="preco" required>
+                    <input type="text" step="0.01" min="0.01" class="add-produtos__input money" id="cadastro" name="preco" data-tipo="preco" maxlength="15" placeholder="R$ 0,00 - Digite apenas números">
                     <label for="descricao" class="input-label">Descrição do produto</label>
-                    <textarea name="descricao" id="cadastro" cols="20" rows="10" maxlength="150" required></textarea>
-                    <button class="botao">Adicionar produto</button>
+                    <textarea name="descricao" id="cadastro" cols="20" rows="10" maxlength="150"></textarea>
+                    <button type="button" class="botao">Adicionar produto</button>
                 </div>
             </fieldset>
         </form>
@@ -77,5 +77,7 @@
     </footer>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/add-produto.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://igorescobar.github.io/jQuery-Mask-Plugin/js/jquery.mask.min.js"></script>
 </body>
 </html>
