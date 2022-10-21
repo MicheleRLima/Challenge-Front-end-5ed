@@ -59,7 +59,6 @@
 }
 
 .produtos-consoles {
-    overflow-y: scroll;
     scroll-behavior: smooth;
 }
 
