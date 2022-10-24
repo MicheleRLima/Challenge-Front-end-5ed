@@ -1,12 +1,17 @@
-const inputsProduto = document.querySelectorAll('#cadastro')
+document.addEventListener('DOMContentLoaded', (event) => {
+    $('.money').mask('000.000.000.000.000,00', {reverse: true});
 
-inputsProduto.forEach(input => {
-    input.addEventListener('blur', (evento) => {
-        validaAddProduto(evento.target);
+    const inputsProduto = document.querySelectorAll('#cadastro')
+
+    inputsProduto.forEach(input => {
+        input.addEventListener('blur', (evento) => {
+            validaAddProduto(evento.target);
+        })
     })
-})
+});
 
-function validaAddProduto (evento) {
+
+function validaAddProduto(evento) {
     const inputInformado = evento.value;
 
     if(inputInformado != "") {
@@ -14,31 +19,24 @@ function validaAddProduto (evento) {
 
         if (evento.dataset.tipo === 'preco') {
             
-            mascaraPreco(evento);
+            padronizaNumero(evento);
         }
-    }else {
+    } else {
         
         evento.classList.add("error")
     }
 }
 
 
-function mascaraPreco (evento) {
-
-    $(document).ready(function(){
-        
-        $('.money').mask('000.000.000.000.000,00', {reverse: true});
-
-        const valorRecebido = evento.value
-        const valorSemMoeda = valorRecebido.replace("R$ ", "")
-        const valorSemMilhar = valorSemMoeda.replace(/\./g, "")
-        const valorAjustado = valorSemMilhar.replace(",", ".")
-
-        const preco = new Intl.NumberFormat('pt-br', { style: 'currency', currency: 'BRL' }).format(valorAjustado)
-        
-       evento.value = preco;
-       
-     });
+function padronizaNumero(evento) {
+    const valorRecebido = evento.value
+    const valorSemMoeda = valorRecebido.replace("R$ ", "")
+    const valorSemMilhar = valorSemMoeda.replace(/\./g, "")
+    const valorAjustado = valorSemMilhar.replace(",", ".")
+    
+    const preco = new Intl.NumberFormat('pt-br', { style: 'currency', currency: 'BRL' }).format(valorAjustado)
+    
+    evento.value = preco;
 }
 
 const btnAddProduto = document.querySelector(".cadastro-produtos button")
